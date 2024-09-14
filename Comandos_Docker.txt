@@ -1,0 +1,8 @@
+Comando para ver os containers que estão rodando -> docker ps
+Comando para ver os que ja pararam e estão rodando -> docker ps -a
+Comando para tornar o terminal interativo com docker -> docker run -it CONTAINER
+Comando para executar o docker em background -> docker run -d CONTAINER
+Comando para liberar porta do containers -> docker run -d -p 80:80 CONTAINER
+Comando para reiniciar um containers -> docker start ID_CONTAINER
+Comando para colocar nomes nos containers -> docker run --name NOME_CONTAINER CONTAINER 
+Comando para exibir LOG do containers -> docker logs NOME_CONTAINER
