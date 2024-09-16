@@ -7,3 +7,5 @@ Comando para reiniciar um containers -> docker start ID_CONTAINER
 Comando para colocar nomes nos containers -> docker run --name NOME_CONTAINER CONTAINER 
 Comando para exibir LOG do containers -> docker logs NOME_CONTAINER
 Comando para remover os containers da máquina -> docker rm ID_CONTAINER
+Comando para baixar a imagem -> docker pull IMAGEM
+Comando para exibir o help -> docker COMANDO_DOCKER --help
