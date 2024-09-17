@@ -1,3 +1,4 @@
+### Comando base
 Comando para ver os containers que estão rodando -> docker ps
 Comando para ver os que ja pararam e estão rodando -> docker ps -a
 Comando para tornar o terminal interativo com docker -> docker run -it CONTAINER
@@ -10,3 +11,15 @@ Comando para remover os containers da máquina -> docker rm ID_CONTAINER
 Comando para baixar a imagem -> docker pull IMAGEM
 Comando para exibir o help -> docker COMANDO_DOCKER --help
 Comando para alterar nome da imagem -> docker tag ID_IMAGEM NOME_IMAGEM 
+Comando para criar imagem do dokcer -> docker build .
+Comando para criar imagem com nome -> docker build -t NOME_IMAGEM:TAG_IMAGEM .
+Comando para rodar a imagem com terminal interativo -> docker run -it ID_CONTAINER
+Comando para remover uma imagem -> docker rmi IMAGEM
+Comando para remover imagem e containers que não utiliza -> docker system prune
+Comando para remover containers depois de usar -> docker run ID_CONTAINER -d -p 3000:3000 --name NOME_CONTAINER --rm
+Comando para copiar um arquivo do containers para o computador ou vice e versa -> docker cp NOME_CONTAINER:LOCALARQUIVO LOCALDESTINO
+
+### Comandos de analise
+Comando para analisar o containers -> docker top NOME_CONTAINER
+Comando para analisar o containers detalhadamente -> docker inspect CONTAINER
+Comando para verificar o status do containers -> docker stats CONTAINER
