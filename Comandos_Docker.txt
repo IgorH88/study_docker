@@ -27,3 +27,6 @@ Comando para verificar o status do containers -> docker stats CONTAINER
 ### Comando de acesso
 Comando para login no docker -> docker login
 Comando para deslogar -> docker logout 
+
+###
+Para atualizar alguma versão do dokcer é necessário utilizar o push adicionando uma nova tag
