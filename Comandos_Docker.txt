@@ -18,6 +18,9 @@ Comando para remover uma imagem -> docker rmi IMAGEM
 Comando para remover imagem e containers que não utiliza -> docker system prune
 Comando para remover containers depois de usar -> docker run ID_CONTAINER -d -p 3000:3000 --name NOME_CONTAINER --rm
 Comando para copiar um arquivo do containers para o computador ou vice e versa -> docker cp NOME_CONTAINER:LOCALARQUIVO LOCALDESTINO
+Comando para criar containers com volume anonimo -> docker run -d -p 80:80 --name NOME_CONTAINER -v /LOCALDOVOLUME
+Comando para criar containers com volume persistido -> docker run -d -p 80:80 --name NOME_CONTAINER -v NOMEVOLUME:/WORKDIRDAIMAGEM 
+Comando para ver o volume -> docker volume ls
 
 ### Comandos de analise
 Comando para analisar o containers -> docker top NOME_CONTAINER
@@ -30,3 +33,9 @@ Comando para deslogar -> docker logout
 
 ###
 Para atualizar alguma versão do dokcer é necessário utilizar o push adicionando uma nova tag
+
+
+
+###
+Comando para ver quais processos estão na porta que desejo olhar -> sudo lsof -i :80
+Comando para matar qualquer processo na porta -> sudo kill PID
