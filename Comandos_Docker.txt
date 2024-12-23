@@ -21,6 +21,12 @@ Comando para copiar um arquivo do containers para o computador ou vice e versa -
 Comando para criar containers com volume anonimo -> docker run -d -p 80:80 --name NOME_CONTAINER -v /LOCALDOVOLUME
 Comando para criar containers com volume persistido -> docker run -d -p 80:80 --name NOME_CONTAINER -v NOMEVOLUME:/WORKDIRDAIMAGEM 
 Comando para ver o volume -> docker volume ls
+Comando para ver informações do volume -> docker vulume inspect NOMEVOLUME
+Comando para criar volume apenas de leitura -> -v volumeleitura:/var/www/html
+Comando para listar todas as redes na máquina -> docker network ls
+Comando para criar uma rede -> docker network create  NOME_DA_REDE
+Comando para remover rede -> docker network rm NOME_DA_REDE
+Comando para remover rede em massa que não está usando -> docker network prune
 
 ### Comandos de analise
 Comando para analisar o containers -> docker top NOME_CONTAINER
