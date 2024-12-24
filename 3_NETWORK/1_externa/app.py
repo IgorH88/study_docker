@@ -1,15 +1,14 @@
-    app.run(host="0.0.0.0", debug=True, port=)
 import flask
-from flask import request, json, jsonify
-import request
+from flask import request, jsonify
+import requests
 
 app = flask.Flask(__name__)
-app.config["DEBUG"] = true
+app.config["DEBUG"] = True
 
-@ap.route("/", methods=["GET"])
-def index()
+@app.route("/", methods=["GET"])
+def index():
     data = requests.get('https://randomuser.me/api')
-    return data.,json()
+    return data.json()
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", debug=True, port="5000")
+    app.run(host="0.0.0.0", debug=True, port=5000)
